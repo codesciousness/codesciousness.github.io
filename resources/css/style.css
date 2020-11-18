@@ -1,0 +1,229 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.5vmin; /* Alternate size: 16px */
+}
+
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+#hero {
+    width:100%;
+    height: 70vh;
+    position: relative;
+    background-image: linear-gradient(180deg, #111, transparent, #111);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#portfolio, #code-languages, footer {
+    width: 100%;
+    background-color: #111;
+}
+
+.container, .projects, #code-languages, footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.image-container {
+    overflow: hidden;
+    box-shadow: 2px 2px 5px darkslategrey;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+
+button {
+    min-width: 20%;
+    padding: 1rem;
+    border: 1px solid #00d6b4;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #00d6b4;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1rem;
+    box-shadow: 5px 5px 20px darkslategrey;
+    transition: all 0.2s ease-in 0.1s;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #fff;
+    color: #fff;
+    box-shadow: 5px 5px 20px black;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 6vmin; /* Alternate size 3.125rem */
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 5vmin; /* Alternate size 2.625rem */
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3vmin; /* Alternate size 1.75rem */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: Lato, sans-serif;
+    font-size: 2vmin;
+    font-weight: 300;
+}
+
+a {
+    color: #00d6b4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 10rem;
+    line-height: 5rem;
+    z-index: 1;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+header .left {
+    font-size: 5vmin;
+    font-family: 'Redressed', cursive;
+    margin: 2% 5%;
+}
+
+header .right {
+    margin: 2% 5%;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+header .tablet {
+    display: none;
+}
+
+header .mobile {
+    display: none;
+}
+
+#heading-wrapper {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 40%;
+    text-align: center;
+}
+
+#portfolio {
+    padding: 2% 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.projects {
+    width: 26%;
+    position: relative;
+    margin: 1rem;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1rem 0;
+    display: none;
+}
+
+.content i {
+    margin: 0 0.5rem;
+}
+
+.projects:hover > * {
+    display: block;
+}
+
+#code-languages {
+    padding: 2% 0;
+}
+
+#code-languages i {
+    margin: 0 2rem;
+}
+
+footer {
+    padding: 2% 0;
+}
+
+footer span {
+    font-family: 'Redressed', cursive;
+    letter-spacing: 0.25rem;
+    margin: 0 0.5rem;
+}
