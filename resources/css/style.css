@@ -17,24 +17,20 @@ body {
     color: #fff;
 }
 
-#hero {
-    width:100%;
-    height: 70vh;
-    position: relative;
-    background-image: linear-gradient(180deg, #111, transparent, #111);
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 #portfolio, #code-languages, footer {
     background-color: #111;
 }
 
-.container, .projects, .code-lang-icons, footer {
+.container, .projects, .code-lang-icons, form, footer {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+#about-me .container {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 .left {
@@ -49,6 +45,13 @@ body {
     overflow: hidden;
     box-shadow: 2px 2px 5px darkslategrey;
     border-radius: 5px;
+}
+
+.image-container-circle {
+    width: 15%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px darkslategrey;
+    border-radius: 50%;
 }
 
 img {
@@ -69,7 +72,13 @@ video {
     
 }
 
-button {
+form {
+    width: 40%;
+    margin: auto;
+    flex-direction: column;
+}
+
+button, .button {
     min-width: 20%;
     padding: 1rem;
     border: 1px solid #00d6b4;
@@ -84,7 +93,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, .button:hover {
     border-color: #fff;
     color: #fff;
     box-shadow: 5px 5px 20px black;
@@ -121,6 +130,38 @@ a {
 
 a:hover {
     color: #fff;
+}
+
+/* Heros */
+
+#main-hero {
+    width:100%;
+    height: 70vh;
+    position: relative;
+    background-image: linear-gradient(180deg, #111, transparent, #111);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about-hero {
+    width:100%;
+    height: 70vh;
+    position: relative;
+    background-image: linear-gradient(180deg, #111, transparent, #111), url('../images/milky-way.jpg');
+    background-size: auto, cover;
+    background-position: center, 50% 80%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#contact-hero {
+    width:100%;
+    height: 70vh;
+    position: relative;
+    background-image: linear-gradient(180deg, #111, transparent, #111), url('../images/purple.jpg');
+    background-size: auto, cover;
+    background-position: center, center bottom;
+    background-repeat: no-repeat, no-repeat;
 }
 
 /* Header */
@@ -278,7 +319,7 @@ nav.mobile {
     margin: 1rem;
 }
 
-.content {
+.project-info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -290,7 +331,7 @@ nav.mobile {
     display: none;
 }
 
-.content i {
+.project-info i {
     margin: 0 0.5rem;
 }
 
@@ -320,7 +361,7 @@ nav.mobile {
         font-size: 4vmin;
     }
 
-    .content span {
+    .project-info span {
         font-size: 3vmin;
     }
 }
@@ -331,7 +372,7 @@ nav.mobile {
         font-size: 5vmin;
     }
 
-    .content span {
+    .project-info span {
         font-size: 4vmin;
     }
 }
