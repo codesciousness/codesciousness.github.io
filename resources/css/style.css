@@ -7,12 +7,12 @@
 }
 
 html {
-    font-size: 2vmin; /* Alternate size: 16px */
+    font-size: 2vmin; /* Alternate size: 14px */
 }
 
 body {
     position: relative;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Lato, sans-serif;
     background-color: #111;
     color: #fff;
 }
@@ -28,11 +28,10 @@ body {
 }
 
 #portfolio, #code-languages, footer {
-    width: 100%;
     background-color: #111;
 }
 
-.container, .projects, #code-languages, footer {
+.container, .projects, .code-lang-icons, footer {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -78,8 +77,6 @@ button {
     background-color: transparent;
     color: #00d6b4;
     text-align: center;
-    font-family: Lato, sans-serif;
-    font-size: 2vmin;
     font-weight: 300;
     line-height: 1rem;
     box-shadow: 5px 5px 20px darkslategrey;
@@ -94,31 +91,26 @@ button:hover {
 }
 
 h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 6vmin; /* Alternate size 3.125rem */
-    font-weight: 700;
+    font-size: 7vmin; /* Alternate size: 3.125rem */
+    font-weight: 300;
     margin-bottom: 3rem;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 5vmin; /* Alternate size 2.625rem */
+    font-size: 5vmin; /* Alternate size: 2.625rem */
     font-weight: 300;
     text-align: center;
     margin-bottom: 2%;
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 3vmin; /* Alternate size 1.75rem */
+    font-size: 3vmin; /* Alternate size: 1.75rem */
     text-align: center;
     margin-bottom: 1rem;
 }
 
 p {
-    font-family: Lato, sans-serif;
-    font-size: 2vmin;
     font-weight: 300;
 }
 
@@ -162,7 +154,7 @@ header li {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -20%);
-    max-width: 50%;
+    width: 60%;
     text-align: center;
 }
 
@@ -193,7 +185,7 @@ nav.mobile {
     }
 
     #heading-wrapper {
-        width: 80%;
+        width: 90%;
     }
 
     .button {
@@ -220,35 +212,51 @@ nav.mobile {
         height: 60vh;
     }
 
-    #heading-wrapper {
-        width: 50%;
+    h1 {
+        font-size: 8vmin;
     }
 
     button {
-        min-width: 40%;
+        min-width: 30%;
         font-size: 3vmin;
+        padding: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 467px) {
 
-    #hero {
-        height: 40vh;
-    }
-
-    button {
-        display: none;
+    h1 {
+        font-size: 10vmin;
     }
 
     h2 {
         font-size: 6vmin;
+    }
+
+    button {
+        min-width: 40%;
+        font-size: 3.5vmin;
+        padding: 2rem;
     }
 }
 
 @media only screen and (max-width: 367px) {
 
     h1 {
-        font-size: 7vmin;
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 8vmin;
+    }
+}
+
+@media only screen and (max-width: 267px) {
+
+    #heading-wrapper {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
     }
 }
 
