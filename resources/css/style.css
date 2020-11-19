@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 1.5vmin; /* Alternate size: 16px */
+    font-size: 2vmin; /* Alternate size: 16px */
 }
 
 body {
@@ -79,7 +79,7 @@ button {
     color: #00d6b4;
     text-align: center;
     font-family: Lato, sans-serif;
-    font-size: 1rem;
+    font-size: 2vmin;
     font-weight: 300;
     line-height: 1rem;
     box-shadow: 5px 5px 20px darkslategrey;
@@ -157,35 +157,115 @@ header li {
     margin: 0 2rem;
 }
 
-header .tablet {
-    display: none;
-}
-
-header .mobile {
-    display: none;
-}
-
 #heading-wrapper {
     position: relative;
-    top: 30%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -30%);
-    width: 40%;
+    transform: translate(-50%, -20%);
+    max-width: 50%;
     text-align: center;
 }
+
+nav.tablet {
+    display: none;
+}
+
+nav.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.tablet {
+        display: block;
+    }
+
+    nav.tablet .collaspe {
+        display: none;
+    }
+
+    nav.tablet .right:hover > * {
+        display: inline-block;
+    }
+
+    #heading-wrapper {
+        width: 80%;
+    }
+
+    .button {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+
+    nav.tablet {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile li {
+        margin: 8% 12%;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    #heading-wrapper {
+        width: 50%;
+    }
+
+    button {
+        min-width: 40%;
+        font-size: 3vmin;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+
+    #hero {
+        height: 40vh;
+    }
+
+    button {
+        display: none;
+    }
+
+    h2 {
+        font-size: 6vmin;
+    }
+}
+
+@media only screen and (max-width: 367px) {
+
+    h1 {
+        font-size: 7vmin;
+    }
+}
+
+/* Portfolio Section */
 
 #portfolio {
     padding: 2% 0;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     flex-wrap: wrap;
 }
 
 .projects {
-    width: 26%;
+    width: 350px;
     position: relative;
     margin: 1rem;
 }
@@ -210,20 +290,74 @@ header .mobile {
     display: block;
 }
 
+@media only screen and (max-width: 900px) {
+
+    .projects {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+
+    .projects {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    #portfolio {
+        padding: 4% 0;
+    }
+
+    h3 {
+        font-size: 4vmin;
+    }
+
+    .content span {
+        font-size: 3vmin;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+
+    h3 {
+        font-size: 5vmin;
+    }
+
+    .content span {
+        font-size: 4vmin;
+    }
+}
+
+/* Code Languages Section */
+
 #code-languages {
     padding: 2% 0;
+    text-align: center;
 }
 
 #code-languages i {
-    margin: 0 2rem;
+    margin: 2rem;
 }
+
+/* Footer */
 
 footer {
     padding: 2% 0;
+}
+
+footer p {
+    font-size: 3vmin;
 }
 
 footer span {
     font-family: 'Redressed', cursive;
     letter-spacing: 0.25rem;
     margin: 0 0.5rem;
+}
+
+@media only screen and (max-width: 567px) {
+
+    footer p {
+        font-size: 4vmin;
+    }
 }
