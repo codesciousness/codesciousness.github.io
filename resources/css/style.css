@@ -33,10 +33,37 @@ body {
     align-items: center;
     justify-items: center;
     width: 40%;
+    min-width: 500px;
+    max-width: 800px;
+    font-size: 1.25rem;
 }
 
 #about-me .container p {
     margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 567px) {
+
+    #about-me .container {
+        min-width: 75%;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+
+    #about-me .container {
+        min-width: 85%;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    #about-me .container {
+        min-width: 95%;
+        font-size: 2.5rem;
+    }
 }
 
 .left {
@@ -54,7 +81,7 @@ body {
 }
 
 .image-container-circle {
-    width: 15%;
+    width: 40%;
     overflow: hidden;
     box-shadow: 2px 2px 5px darkslategrey;
     border-radius: 50%;
@@ -83,6 +110,8 @@ form {
     text-align: left;
     margin: 2rem auto;
     width: 40%;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 form label {
@@ -102,6 +131,29 @@ input:not(.button), textarea {
 
 input::placeholder, textarea::placeholder{
     color: #fff;
+}
+
+@media only screen and (max-width: 567px) {
+
+    form {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+
+    form {
+        min-width: 85%;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    form {
+        min-width: 95%;
+        font-size: 2rem;
+    }
 }
 
 button, .button {
@@ -276,8 +328,8 @@ nav.mobile {
         margin: 8% 12%;
     }
 
-    #hero {
-        height: 30rem;
+    #main-hero {
+        height: 40rem;
     }
 
     h1 {
@@ -292,6 +344,10 @@ nav.mobile {
 }
 
 @media only screen and (max-width: 467px) {
+
+    #main-hero {
+        height: 50rem;
+    }
 
     h1 {
         font-size: 5rem;
@@ -316,15 +372,6 @@ nav.mobile {
 
     h2 {
         font-size: 4rem;
-    }
-}
-
-@media only screen and (max-width: 267px) {
-
-    #heading-wrapper {
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -40%);
     }
 }
 

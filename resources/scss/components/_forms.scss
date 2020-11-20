@@ -4,6 +4,8 @@ form {
     margin: 2rem auto;
     text-align: left;
     width: 40%;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 form label {
@@ -25,4 +27,27 @@ input:not(.button), textarea {
 
 input::placeholder, textarea::placeholder{
     color: $main-color;
+}
+
+@media only screen and (max-width: 567px) {
+
+    form {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+
+    form {
+        min-width: 85%;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    form {
+        min-width: 95%;
+        font-size: 2rem;
+    }
 }
