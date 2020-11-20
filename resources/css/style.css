@@ -381,7 +381,7 @@ nav.mobile {
     padding: 2% 0;
 }
 
-.container {
+#portfolio .container {
     width: 90%;
     margin: auto;
     flex-wrap: wrap;

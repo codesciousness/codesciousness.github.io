@@ -16,18 +16,20 @@ video {
 
 #portfolio {
     padding: 2% 0;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
+    .container {
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
 }
 
 .projects {
     width: 350px;
     position: relative;
     margin: 1rem;
+    &:hover > * {
+        display: block;
+    }
 }
 
 .project-info {
@@ -36,14 +38,9 @@ video {
     background-color: $secondary-bg-color-1;
     padding: 1rem 0;
     display: none;
-}
-
-.project-info i {
-    margin: 0 0.5rem;
-}
-
-.projects:hover > * {
-    display: block;
+    i {
+        margin: 0 0.5rem;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -88,8 +85,7 @@ video {
 
 #code-languages {
     padding: 2% 0;
-}
-
-#code-languages i {
-    margin: 2rem;
+    i {
+        margin: 2rem;
+    }
 }

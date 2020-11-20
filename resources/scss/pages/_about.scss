@@ -5,10 +5,9 @@
     min-width: 500px;
     max-width: 800px;
     font-size: 1.25rem;
-}
-
-#about-me .container p {
-    margin-bottom: 2.5rem;
+    p {
+        margin-bottom: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 567px) {

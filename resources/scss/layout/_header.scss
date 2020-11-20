@@ -4,23 +4,20 @@ header {
     line-height: 5rem;
     z-index: 1;
     overflow: hidden;
-}
-
-header .left {
-    font : {
-        size: 2.5rem;
-        family: $secondary-font-1;
+    .left {
+        font : {
+            size: 2.5rem;
+            family: $secondary-font-1;
+        }
+        margin: 2% 5%;
     }
-    margin: 2% 5%;
-}
-
-header .right {
-    margin: 2% 5%;
-}
-
-header li {
-    display: inline-block;
-    margin: 0 2rem;
+    .right {
+        margin: 2% 5%;
+    }
+    li {
+        display: inline-block;
+        margin: 0 2rem;
+    }
 }
 
 #heading-wrapper {
@@ -31,30 +28,27 @@ header li {
     width: 60%;
 }
 
-nav.tablet {
-    display: none;
-}
-
-nav.mobile {
-    display: none;
+nav {
+    &.tablet, &.mobile {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
-    nav.desktop {
-        display: none;
-    }
-
-    nav.tablet {
-        display: block;
-    }
-
-    nav.tablet .collaspe {
-        display: none;
-    }
-
-    nav.tablet .right:hover > * {
-        display: inline-block;
+    nav {
+        &.desktop {
+            display: none;
+        }
+        &.tablet {
+            display: block;
+        }
+        &.tablet .collaspe {
+            display: none;
+        }
+        &.tablet .right:hover > * {
+            display: inline-block;
+        }
     }
 
     #heading-wrapper {
@@ -68,12 +62,13 @@ nav.mobile {
 
 @media only screen and (max-width: 567px) {
 
-    nav.tablet {
-        display: none;
-    }
-
-    nav.mobile {
-        display: block;
+    nav {
+        &.tablet {
+            display: none;
+        }
+        &.mobile {
+            display: block;
+        }
     }
 
     .mobile li {

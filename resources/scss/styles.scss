@@ -87,8 +87,7 @@ p {
 a {
   color: $secondary-color-1;
   text-decoration: none;
-}
-
-a:hover {
-  color: $main-color;
+  &:hover {
+    color: $main-color;
+  }
 }

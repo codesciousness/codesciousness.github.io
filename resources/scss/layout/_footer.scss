@@ -2,16 +2,14 @@ footer {
     @extend %flex-center-parent;
     background-color: $main-bg-color;
     padding: 2% 0;
-}
-  
-footer p {
-    font-size: 1.5rem;
-}
-
-footer span {
-    font-family: $secondary-font-1;
-    letter-spacing: 0.25rem;
-    margin: 0 0.5rem;
+    p {
+        font-size: 1.5rem;
+        span {
+            font-family: $secondary-font-1;
+            letter-spacing: 0.25rem;
+            margin: 0 0.5rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 567px) {
