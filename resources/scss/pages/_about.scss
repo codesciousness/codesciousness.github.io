@@ -1,0 +1,17 @@
+#about-me .container {
+    @extend %flex-center-children;
+    flex-direction: column;
+    width: 40%;
+}
+
+#about-me .container p {
+    margin-bottom: 2.5rem;
+}
+
+.image-container-circle {
+    width: 15%;
+    overflow: hidden;
+    box-shadow: $main-box-shadow;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}

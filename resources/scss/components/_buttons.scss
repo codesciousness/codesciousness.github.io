@@ -1,0 +1,26 @@
+button, .button {
+    min-width: 20%;
+    padding: 1rem;
+    border: $main-border;
+    border-radius: $border-radius-xs;
+    background-color: transparent;
+    color: $secondary-color-1;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1rem;
+    box-shadow: $main-box-shadow;
+    transition: all 0.2s ease-in 0.1s;
+    cursor: pointer;
+}
+
+.button {
+    min-width: 30%;
+    max-width: 35%;
+    margin: auto;
+}
+
+button:hover, .button:hover {
+    border-color: $main-color;
+    color: $main-color;
+    box-shadow: $secondary-box-shadow-1;
+}

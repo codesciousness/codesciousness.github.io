@@ -1,0 +1,94 @@
+/* Helpers */
+
+@import "helpers/variables";
+@import "helpers/placeholders";
+@import "helpers/mixins";
+
+/* Pages */
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+
+/* Layout */
+
+@import "layout/header";
+@import "layout/footer";
+
+/* Components */
+
+@import "components/heros";
+@import "components/forms";
+@import "components/buttons";
+
+/* Universal Styles */
+
+* {
+  @extend %normalize;
+}
+
+html {
+  font-size: $main-font-size;
+}
+
+body {
+  font-family: $main-font;
+  color: $main-color;
+  background-color: $main-bg-color;
+  position: relative;
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.image-container {
+  overflow: hidden;
+  box-shadow: $main-box-shadow;
+  border-radius: $border-radius-sm;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font : {
+    size: 3.5rem;
+    weight: 300;
+  }
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font : {
+    size: 2.5rem;
+    weight: 300;
+  }
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  color: $secondary-color-1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $main-color;
+}

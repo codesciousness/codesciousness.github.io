@@ -1,0 +1,95 @@
+#portfolio, #code-languages {
+    background-color: $main-bg-color;
+}
+  
+.container, .projects, .code-lang-icons {
+    @extend %flex-center-parent;
+}
+
+video {
+    @extend %fixed-to-top;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#portfolio {
+    padding: 2% 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.projects {
+    width: 350px;
+    position: relative;
+    margin: 1rem;
+}
+
+.project-info {
+    @extend %absolute-center;
+    width: 100%;
+    background-color: $secondary-bg-color-1;
+    padding: 1rem 0;
+    display: none;
+}
+
+.project-info i {
+    margin: 0 0.5rem;
+}
+
+.projects:hover > * {
+    display: block;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .projects {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+
+    .projects {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    #portfolio {
+        padding: 4% 0;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .project-info span {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .project-info span {
+        font-size: 2rem;
+    }
+}
+
+/* Code Languages Section */
+
+#code-languages {
+    padding: 2% 0;
+}
+
+#code-languages i {
+    margin: 2rem;
+}
