@@ -41,6 +41,9 @@ video {
     i {
         margin: 0 0.5rem;
     }
+    p {
+        margin: 1rem;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -65,8 +68,10 @@ video {
         font-size: 2rem;
     }
 
-    .project-info span {
-        font-size: 1.5rem;
+    .project-info {
+        span, p {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -76,8 +81,10 @@ video {
         font-size: 2.5rem;
     }
 
-    .project-info span {
-        font-size: 2rem;
+    .project-info {
+        span, p {
+            font-size: 2rem;
+        }
     }
 }
 

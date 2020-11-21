@@ -77,13 +77,17 @@ video {
 
 .project-info {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem 0;
   display: none;
 }
 
 .project-info i {
   margin: 0 0.5rem;
+}
+
+.project-info p {
+  margin: 1rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -103,7 +107,7 @@ video {
   h3 {
     font-size: 2rem;
   }
-  .project-info span {
+  .project-info span, .project-info p {
     font-size: 1.5rem;
   }
 }
@@ -112,7 +116,7 @@ video {
   h3 {
     font-size: 2.5rem;
   }
-  .project-info span {
+  .project-info span, .project-info p {
     font-size: 2rem;
   }
 }
@@ -449,6 +453,7 @@ body {
 }
 
 .image-container {
+  width: 100%;
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 5px darkslategrey;
           box-shadow: 2px 2px 5px darkslategrey;
