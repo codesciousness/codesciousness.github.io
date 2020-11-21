@@ -3,6 +3,7 @@
 /* Font Properties */
 /* Borders */
 /* Box Shadow */
+/* Transitions */
 * {
   margin: 0;
   border: 0;
@@ -183,6 +184,7 @@ header {
   line-height: 5rem;
   z-index: 1;
   overflow: hidden;
+  position: relative;
 }
 
 header .left {
@@ -221,10 +223,17 @@ nav.tablet, nav.mobile {
     display: block;
   }
   nav.tablet .collaspe {
-    display: none;
-  }
-  nav.tablet .right:hover > * {
     display: inline-block;
+    position: absolute;
+    right: -60%;
+    border-radius: 5px;
+    background-color: #111;
+    -webkit-transition: all 0.75s ease-in-out 0.1s;
+    transition: all 0.75s ease-in-out 0.1s;
+  }
+  nav.tablet .collaspe:hover {
+    -webkit-transform: translateX(-85%);
+            transform: translateX(-85%);
   }
   #heading-wrapper {
     width: 90%;

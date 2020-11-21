@@ -9,7 +9,7 @@ button, .button {
     font-weight: 300;
     line-height: 1rem;
     box-shadow: $main-box-shadow;
-    transition: all 0.2s ease-in 0.1s;
+    transition: $button-transitions;
     cursor: pointer;
     &:hover {
         border-color: $main-color;

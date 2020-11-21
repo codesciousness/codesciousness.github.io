@@ -4,6 +4,7 @@ header {
     line-height: 5rem;
     z-index: 1;
     overflow: hidden;
+    position: relative;
     .left {
         font : {
             size: 2.5rem;
@@ -44,10 +45,15 @@ nav {
             display: block;
         }
         &.tablet .collaspe {
-            display: none;
-        }
-        &.tablet .right:hover > * {
             display: inline-block;
+            position: absolute;
+            right: -60%;
+            border-radius: $border-radius-sm;
+            background-color: $main-bg-color;
+            transition: $nav-transitions;
+            &:hover {
+                transform: translateX(-85%);
+            }
         }
     }
 

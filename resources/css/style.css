@@ -255,6 +255,7 @@ header {
     z-index: 1;
     font-size: 1rem;
     overflow: hidden;
+    position: relative;
 }
 
 header .left {
@@ -299,11 +300,16 @@ nav.mobile {
     }
 
     nav.tablet .collaspe {
-        display: none;
+        display: inline-block;
+        position: absolute;
+        right: -60%;
+        border-radius: 5px;
+        background-color: #111;
+        transition: all 0.75s ease-in-out 0.1s;
     }
 
-    nav.tablet .right:hover > * {
-        display: inline-block;
+    nav.tablet .collaspe:hover {
+        transform: translateX(-85%);
     }
 
     #heading-wrapper {
