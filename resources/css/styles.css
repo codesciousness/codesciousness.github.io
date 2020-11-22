@@ -243,7 +243,7 @@ nav.tablet, nav.mobile {
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 745px) {
   nav.tablet .collaspe {
     right: -60%;
   }
