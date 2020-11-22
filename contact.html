@@ -59,14 +59,14 @@
     <main>
       <!-- About Me Section -->
       <section id="contact">
-        <form method="post" action="">
+        <form method="post" action="" role="presentation">
           <label for="name">NAME</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[A-Za-z]" required>
+          <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[A-Za-z]" aria-label="Enter your name" required>
           <label for="email">EMAIL ADDRESS</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" aria-label="Enter your email address" required>
           <label for="message">MESSAGE</label>
-          <textarea id="message" name="message" rows="10" cols="30" maxlength="250" placeholder="Enter your message" required></textarea>
-          <input class="button" role="button" type="submit" value="SUBMIT">
+          <textarea id="message" name="message" rows="10" cols="30" maxlength="250" placeholder="Enter your message" aria-label="Enter your message" required></textarea>
+          <input class="button" type="submit" value="SUBMIT" role="button" aria-label="Submit">
         </form>
       </section>
     </main>
