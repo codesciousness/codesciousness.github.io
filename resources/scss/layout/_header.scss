@@ -47,7 +47,7 @@ nav {
         &.tablet .collaspe {
             display: inline-block;
             position: absolute;
-            right: -60%;
+            right: -59%;
             border-radius: $border-radius-sm;
             background-color: $main-bg-color;
             transition: $nav-transitions;
@@ -63,6 +63,15 @@ nav {
 
     .button {
         width: 40%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+
+    nav {
+        &.tablet .collaspe {
+            right: -60%;
+        }
     }
 }
 
