@@ -147,10 +147,18 @@ video {
   text-align: left;
 }
 
+#about-me .content span {
+  font-family: Argon;
+  font-size: 2.5rem;
+}
+
 @media only screen and (max-width: 567px) {
   #about-me .container {
     min-width: 75%;
     font-size: 1.5rem;
+  }
+  #about-me .content span {
+    font-size: 3rem;
   }
 }
 
@@ -159,12 +167,18 @@ video {
     min-width: 85%;
     font-size: 2rem;
   }
+  #about-me .content span {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   #about-me .container {
     min-width: 90%;
     font-size: 2.5rem;
+  }
+  #about-me .content span {
+    font-size: 4rem;
   }
 }
 
@@ -443,6 +457,12 @@ button:hover, .button:hover {
   min-width: 30%;
   max-width: 35%;
   margin: auto;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Argon;
+  src: url(../fonts/Argon/Argon-Regular.otf) format("opentype");
 }
 
 /* Universal Styles */
