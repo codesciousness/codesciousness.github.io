@@ -1,4 +1,3 @@
-/* Helpers */
 /* Colors */
 /* Font Properties */
 /* Borders */
@@ -42,7 +41,6 @@ video {
   left: 0;
 }
 
-/* Pages */
 #portfolio, #code-languages {
   background-color: #111;
 }
@@ -143,8 +141,10 @@ video {
   margin: auto;
 }
 
-#about-me .container p {
-  margin-bottom: 2.5rem;
+#about-me .content {
+  margin: 2rem 0 2.5rem 0;
+  padding: 0 1rem;
+  text-align: left;
 }
 
 @media only screen and (max-width: 567px) {
@@ -163,7 +163,7 @@ video {
 
 @media only screen and (max-width: 320px) {
   #about-me .container {
-    min-width: 95%;
+    min-width: 90%;
     font-size: 2.5rem;
   }
 }
@@ -175,9 +175,9 @@ video {
           box-shadow: 2px 2px 5px darkslategrey;
   border-radius: 50%;
   margin-bottom: 3rem;
+  display: none;
 }
 
-/* Layout */
 header {
   width: 100%;
   height: 10rem;
@@ -319,7 +319,6 @@ footer p span {
   }
 }
 
-/* Components */
 #main-hero {
   width: 100%;
   height: 35rem;

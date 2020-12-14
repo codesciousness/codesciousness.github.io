@@ -1,25 +1,21 @@
-/* Helpers */
-
 @import "helpers/variables";
 @import "helpers/placeholders";
 @import "helpers/mixins";
-
-/* Pages */
-
 @import "pages/home";
 @import "pages/about";
 @import "pages/contact";
-
-/* Layout */
-
 @import "layout/header";
 @import "layout/footer";
-
-/* Components */
-
 @import "components/heros";
 @import "components/forms";
 @import "components/buttons";
+
+/* Fonts */
+
+@font-face {
+  font-family: Argon;
+  src: url(../fonts/Argon/Argon-Regular.otf) format('opentype');
+}
 
 /* Universal Styles */
 

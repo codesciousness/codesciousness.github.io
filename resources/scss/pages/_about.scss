@@ -6,8 +6,15 @@
     max-width: 800px;
     font-size: 1.25rem;
     margin: auto;
-    p {
-        margin-bottom: 2.5rem;
+}
+
+#about-me .content {
+    margin: 2rem 0 2.5rem 0;
+    padding: 0 1rem;
+    text-align: left;
+    span {
+        font-family: Argon;
+        font-size: 2.5rem;
     }
 }
 
@@ -17,6 +24,10 @@
         min-width: 75%;
         font-size: 1.5rem;
     }
+
+    #about-me .content span {
+        font-size: 3rem;
+    }
 }
 
 @media only screen and (max-width: 467px) {
@@ -25,13 +36,21 @@
         min-width: 85%;
         font-size: 2rem;
     }
+
+    #about-me .content span {
+        font-size: 3.5rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     
     #about-me .container {
-        min-width: 95%;
+        min-width: 90%;
         font-size: 2.5rem;
+    }
+
+    #about-me .content span {
+        font-size: 4rem;
     }
 }
 
@@ -41,4 +60,5 @@
     box-shadow: $main-box-shadow;
     border-radius: 50%;
     margin-bottom: 3rem;
+    display: none;
 }
