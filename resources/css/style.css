@@ -25,13 +25,12 @@ body {
     text-align: center;
 }
 
-#portfolio, #code-languages, footer {
+#portfolio, #skills, footer {
     background-color: #111;
 }
 
-.container, .projects, .code-lang-icons, form, footer {
+.container, .projects, .skills-icons, form, footer {
     display: flex;
-    align-content: center;
     justify-content: center;
 }
 
@@ -495,14 +494,38 @@ nav.mobile {
     }
 }
 
-/* Code Languages Section */
+/* Skills Section */
 
-#code-languages {
+#skills {
     padding: 2% 0;
 }
 
-#code-languages i {
+.skills-icons {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.skills-icons i {
     margin: 2rem;
+}
+
+.skills-icons p {
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 567px) {
+
+    .skills-icons p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+
+    .skills-icons p {
+        font-size: 2rem;
+    }
 }
 
 /* Footer */

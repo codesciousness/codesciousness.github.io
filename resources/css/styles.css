@@ -9,12 +9,10 @@
   padding: 0;
 }
 
-.container, .projects, .code-lang-icons, footer, form {
+.container, .projects, .skills-icons, footer, form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -41,7 +39,7 @@ video {
   left: 0;
 }
 
-#portfolio, #code-languages {
+#portfolio, #skills {
   background-color: #111;
 }
 
@@ -120,13 +118,36 @@ video {
   }
 }
 
-/* Code Languages Section */
-#code-languages {
+/* Skills Section */
+#skills {
   padding: 2% 0;
 }
 
-#code-languages i {
+.skills-icons {
+  width: 90%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills-icons i {
   margin: 2rem;
+}
+
+.skills-icons p {
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 567px) {
+  .skills-icons p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .skills-icons p {
+    font-size: 2rem;
+  }
 }
 
 #about-me .container {

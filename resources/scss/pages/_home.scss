@@ -1,8 +1,8 @@
-#portfolio, #code-languages {
+#portfolio, #skills {
     background-color: $main-bg-color;
 }
   
-.container, .projects, .code-lang-icons {
+.container, .projects, .skills-icons {
     @extend %flex-center-parent;
 }
 
@@ -88,11 +88,38 @@ video {
     }
 }
 
-/* Code Languages Section */
+/* Skills Section */
 
-#code-languages {
+#skills {
     padding: 2% 0;
+}
+
+.skills-icons {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
     i {
         margin: 2rem;
+    }
+    p {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+
+    .skills-icons {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+
+    .skills-icons {
+        p {
+            font-size: 2rem;
+        }
     }
 }
