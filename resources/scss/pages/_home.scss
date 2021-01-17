@@ -26,7 +26,8 @@ video {
 .projects {
     width: 350px;
     position: relative;
-    margin: 1rem;
+    margin: 3rem;
+    transition: margin 2s ease-in-out;
     &:hover > * {
         display: block;
     }
@@ -57,7 +58,6 @@ video {
 
     .projects {
         width: 100%;
-        margin: 2rem 0;
     }
 
     #portfolio {

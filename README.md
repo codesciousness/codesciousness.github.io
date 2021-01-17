@@ -10,6 +10,7 @@ This is my GitHub Pages portfolio site, in which I showcase the latest projects 
 
 This project was created with:
 
+- JavaScript ES6
 - HTML5
 - CSS3 (SCSS)
 

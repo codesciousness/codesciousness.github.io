@@ -65,7 +65,9 @@ video {
 .projects {
   width: 350px;
   position: relative;
-  margin: 1rem;
+  margin: 3rem;
+  -webkit-transition: margin 2s ease-in-out;
+  transition: margin 2s ease-in-out;
 }
 
 .projects:hover > * {
@@ -96,7 +98,6 @@ video {
 @media only screen and (max-width: 567px) {
   .projects {
     width: 100%;
-    margin: 2rem 0;
   }
   #portfolio {
     padding: 4% 0;
