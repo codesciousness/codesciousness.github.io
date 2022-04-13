@@ -1,0 +1,87 @@
+.Skills {
+    width: 100%;
+    margin: auto;
+}
+
+.Skills__title {
+    text-align: center;
+}
+
+.Skills__table {
+    border-spacing: 0 5px;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.Skills__table__header {
+    font-size: 2rem;
+    text-align: left;
+    margin: auto 1rem;
+}
+
+.Skills__table__data {
+    background-color: rgba(225, 240, 250, 0.2);
+    padding: 0.5rem;
+    border-bottom: 1px solid #E1F0FA;
+    text-align: left;
+}
+
+.Skills__table__data:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Skills__table__data:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Skills__table__span {
+    background-color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.Skills__table__experience {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Skills__table__level {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(145, 145, 165, 0.5);
+    margin: auto 0.15rem;
+    opacity: 0.8;
+}
+
+.Skills__icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 250px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.Skills__icons__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.Skills__icon {
+    width: 130px;
+    height: auto;
+    overflow: hidden;
+}

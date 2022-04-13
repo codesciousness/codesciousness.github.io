@@ -1,15 +1,14 @@
 import React from 'react';
 import './About.css';
+import AboutImg from '../../resources/images/alexander-sinn-KgLtFCgfC28-unsplash-square.jpg';
 
 const About = () => {
     return (
         <section id="about" className="About">
             <h2 className="About__title">Why I chose software developing</h2>
-            <div className="About__container" role="presentation">
-                <div className="About__image__container" role="presentation">
-                    <img className="About__image" src="resources/images/abstract-shimmering-dust.jpg" alt="Software developer" />
-                </div>
-                <div role="presentation">
+            <div className="About__container">
+                <img className="About__image" src={AboutImg} alt="Software developer" />
+                <div>
                     <p className="About__content"><span>Hello!</span> My name is Mia. I am currently striving to become an outstanding 
                         full-stack web developer and programmer to contribute to making the web a 
                         better place. I have always had a passion for logic and creative thinking, 

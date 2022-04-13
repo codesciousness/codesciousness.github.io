@@ -1,0 +1,41 @@
+.Navbar__desktop, .Navbar__tablet, .Navbar__phone {
+    width: 100%;
+    height: auto;
+    background: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.Navbar__title {
+    font-family: Advent Pro;
+    font-size: 2rem;
+    margin: auto 1rem;
+}
+
+.Navbar__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar__links li {
+    list-style: none;
+    margin: 0 2rem;
+}
+
+.Navbar__phone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Navbar__collapse {
+    display: none;
+}
+

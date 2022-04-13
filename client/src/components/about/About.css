@@ -1,0 +1,33 @@
+.About__title {
+    width: 100%;
+    font-family: Advent Pro;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.About__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    min-width: 500px;
+    max-width: 1000px;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.About__image {
+    width: 50%;
+    min-width: 214px;
+    max-width: 428px;
+    height: auto;
+    overflow: hidden;
+}
+
+.About__content {
+    margin: 2rem auto;
+    text-align: justify;
+}
