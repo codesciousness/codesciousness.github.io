@@ -1,10 +1,10 @@
 .Footer {
     width: 100%;
     text-align: center;
+    margin: 1rem auto;
     padding: 1rem;
 }
 
 .Footer__content {
     font-family: Advent Pro;
-    font-size: 2rem;
 }

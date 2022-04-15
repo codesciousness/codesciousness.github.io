@@ -1,7 +1,10 @@
-.About__title {
+.About {
     width: 100%;
+    margin: 1rem auto;
+}
+
+.About__title {
     font-family: Advent Pro;
-    font-size: 2rem;
     text-align: center;
     padding: 1rem;
 }
@@ -11,8 +14,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    min-width: 500px;
+    width: 50%;
+    min-width: 200px;
     max-width: 1000px;
     font-size: 1.5rem;
     margin: auto;
@@ -30,4 +33,25 @@
 .About__content {
     margin: 2rem auto;
     text-align: justify;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+
+    .About__container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .About__container {
+        width: 100%;
+    }
+
+    .About__content {
+        margin: 2rem auto;
+        text-align: left;
+    }
 }

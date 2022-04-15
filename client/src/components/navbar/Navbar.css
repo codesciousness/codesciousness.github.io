@@ -1,20 +1,22 @@
-.Navbar__desktop, .Navbar__tablet, .Navbar__phone {
+.Navbar {
     width: 100%;
     height: auto;
     background: white;
     position: fixed;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid black;
+    
+    z-index: 1;
+}
+
+.Navbar__desktop, .Navbar__tablet, .Navbar__phone {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid black;
-    overflow: hidden;
-    z-index: 1;
 }
   
 .Navbar__title {
     font-family: Advent Pro;
-    font-size: 2rem;
     margin: auto 1rem;
 }
 
@@ -29,13 +31,86 @@
     margin: 0 2rem;
 }
 
+.Navbar__tablet {
+    position: relative;
+}
+
+.Navbar__collapse {
+    position: absolute;
+    right: -63%;
+    transition: all 0.75s ease-in-out 0.1s;
+}
+
+.Navbar__collapse:hover {
+    transform: translateX(-90%);
+}
+
+.Navbar__collapse li {
+    margin: 0 1rem;
+}
+
 .Navbar__phone {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.Navbar__collapse {
+.Navbar__tablet, .Navbar__phone {
     display: none;
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+
+    .Navbar__desktop {
+        display: none;
+    }
+
+    .Navbar__tablet {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .Navbar__collapse {
+        right: -65%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .Navbar__collapse {
+        right: -67%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    .Navbar__collapse {
+        right: -70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .Navbar__tablet {
+        display: none;
+    }
+
+    .Navbar__phone {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .Navbar__title {
+        display: none;
+    }
+
+    .Navbar__phone {
+        justify-content: center;
+    }
+}
