@@ -1,12 +1,12 @@
 .About {
     width: 100%;
+    min-height: 100vh;
     margin: 1rem auto;
 }
 
 .About__title {
-    font-family: Advent Pro;
     text-align: center;
-    padding: 1rem;
+    margin: 1rem;
 }
 
 .About__container {
@@ -18,7 +18,7 @@
     min-width: 200px;
     max-width: 1000px;
     font-size: 1.5rem;
-    margin: auto;
+    margin: 1rem auto;
     padding: 1rem;
 }
 
@@ -53,5 +53,12 @@
     .About__content {
         margin: 2rem auto;
         text-align: left;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .About__title {
+        font-size: 2.5rem;
     }
 }

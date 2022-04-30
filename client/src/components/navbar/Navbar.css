@@ -1,11 +1,11 @@
 .Navbar {
     width: 100%;
-    height: auto;
+    height: 80px;
     background: white;
     position: fixed;
     padding: 1rem 2rem;
     border-bottom: 1px solid black;
-    z-index: 1;
+    z-index: 2;
 }
 
 .Navbar__desktop, .Navbar__tablet, .Navbar__phone {

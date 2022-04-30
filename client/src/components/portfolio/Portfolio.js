@@ -41,7 +41,7 @@ const Portfolio = () => {
                                         <a href="https://github.com/codesciousness/e-commerce-app" target="_blank" rel="noreferrer">
                                             <i className="fas fa-code"></i><span>GitHub Repo</span>
                                         </a>
-                                        <p>Postgres/Express/React-Redux/Node Project</p>
+                                        <p>Postgres/Express/React-Redux/Node.js Project</p>
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@ const Portfolio = () => {
                         <a href="https://github.com/codesciousness/e-commerce-app" target="_blank" rel="noreferrer">
                             <i className="fas fa-code"></i><span>GitHub Repo</span>
                         </a>
-                        <p>Postgres/Express/React-Redux/Node Project</p>
+                        <p>Postgres/Express/<br />React-Redux/Node.js<br />Project</p>
                     </div>
                 </div>
                 <div className="Portfolio__projects two" role="presentation">
@@ -169,7 +169,7 @@ const Portfolio = () => {
                         <a href="https://github.com/codesciousness/reddit-client" target="_blank" rel="noreferrer">
                             <i className="fas fa-code"></i><span>GitHub Repo</span>
                         </a>
-                        <p>JS/React-Redux/Node.js Project</p>
+                        <p>JS/React-Redux/<br />Node.js Project</p>
                     </div>
                 </div>
                 <div className="Portfolio__projects three" role="presentation">

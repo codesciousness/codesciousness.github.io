@@ -1,5 +1,6 @@
 .Portfolio {
     width: 100%;
+    min-height: 90vh;
     margin: 1rem auto;
 }
 
@@ -44,6 +45,10 @@
     opacity: 0.9;
 }
 
+.Portfolio__project__title {
+    margin: 1rem;
+}
+
 .Portfolio__info i {
     margin: 0 0.5rem;
 }
@@ -78,7 +83,7 @@
     width: 150px;
     height: 150px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     float: left;
     margin: 0 10px 10px 0;
     border: solid 3px #55bfe2;
@@ -246,5 +251,31 @@
 
     .Portfolio__projects__flex__container {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .Portfolio__projects {
+        width: 250px;
+        height: 250px;
+    }
+
+    .Portfolio__info {
+        font-size: 1.5rem;
+        padding: 1rem auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .Portfolio__projects {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Portfolio__info {
+        font-size: 1rem;
+        padding: 0.5rem auto;
     }
 }
