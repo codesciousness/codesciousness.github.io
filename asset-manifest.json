@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.411f3240.css",
+    "main.js": "./static/js/main.4b364e8f.js",
+    "static/js/787.c4e7f8f9.chunk.js": "./static/js/787.c4e7f8f9.chunk.js",
+    "static/media/jammming-screen-recording.gif": "./static/media/jammming-screen-recording.35bc8ebc50ba8bae5b9d.gif",
+    "static/media/reddit-client-screen-recording.gif": "./static/media/reddit-client-screen-recording.d75475fec1bb4d55db60.gif",
+    "static/media/company-homepage-flexbox-screen-recording.gif": "./static/media/company-homepage-flexbox-screen-recording.94b7ab943cf346aebba2.gif",
+    "static/media/e-commerce-app-checkout-screen-recording.gif": "./static/media/e-commerce-app-checkout-screen-recording.4eaf3b3a09fa054ce7a3.gif",
+    "static/media/web-design-system-screen-recording.gif": "./static/media/web-design-system-screen-recording.456b47f9f02e444bb3ad.gif",
+    "static/media/find-your-hat-screen-recording.gif": "./static/media/find-your-hat-screen-recording.d458e4729dbf4980bf4d.gif",
+    "static/media/alexander-sinn-KgLtFCgfC28-unsplash-square.jpg": "./static/media/alexander-sinn-KgLtFCgfC28-unsplash-square.1c24ca17d8cc517c6f4d.jpg",
+    "static/media/redux-logo.png": "./static/media/redux-logo.e84c0c60021d73777b6d.png",
+    "static/media/sql-icon.png": "./static/media/sql-icon.65c12507d6dd24478b00.png",
+    "static/media/reddit-client-project-resized.jpg": "./static/media/reddit-client-project-resized.1a3600ea07842300ad04.jpg",
+    "static/media/web-design-system-resized.jpg": "./static/media/web-design-system-resized.a363b0b7cf7af42fd113.jpg",
+    "static/media/postgresql-icon.png": "./static/media/postgresql-icon.0c9bb9cc1ac540a242e0.png",
+    "static/media/jammming-project-resized.jpg": "./static/media/jammming-project-resized.9563652f1f0b17d7657c.jpg",
+    "static/media/company-homepage-flexbox-project-resized.jpg": "./static/media/company-homepage-flexbox-project-resized.9cc6dd3929e09d736e35.jpg",
+    "static/media/e-commerce-app-project-resized.jpg": "./static/media/e-commerce-app-project-resized.cbc3c6ce63c062e59d48.jpg",
+    "static/media/find-your-hat-project.jpg": "./static/media/find-your-hat-project.618a816678dfb663fe4b.jpg",
+    "static/media/expressjs-icon.png": "./static/media/expressjs-icon.967f19e53084fc186520.png",
+    "index.html": "./index.html",
+    "main.411f3240.css.map": "./static/css/main.411f3240.css.map",
+    "main.4b364e8f.js.map": "./static/js/main.4b364e8f.js.map",
+    "787.c4e7f8f9.chunk.js.map": "./static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.411f3240.css",
+    "static/js/main.4b364e8f.js"
+  ]
+}

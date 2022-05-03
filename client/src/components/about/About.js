@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 import AboutImg from '../../resources/images/alexander-sinn-KgLtFCgfC28-unsplash-square.jpg';
 
 const About = () => {
@@ -19,7 +20,7 @@ const About = () => {
                         React, Redux, Node.js, Express, SQL, PostgreSQL, database and responsive design. When I’m not coding, 
                         you’ll typically find me watching anime, listening to ancient epic storytelling or finding balance in 
                         my life through meditation. I am currently living in Lubbock, Texas. If you are interested in 
-                        working on a project together, don’t hesitate to <a href="contact.html">get in touch</a>!
+                        working on a project together, don’t hesitate to <Link to='/contact'><b>get in touch</b></Link>!
                     </p>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 .Portfolio {
     width: 100%;
     min-height: 90vh;
-    margin: 1rem auto;
+    margin: 3rem auto 0 auto;
 }
 
 .Portfolio__title {
@@ -41,6 +41,7 @@
     height: 100%;
     color: white;
     background-color: black;
+    text-align: center;
     padding: 1rem 0;
     opacity: 0.9;
 }

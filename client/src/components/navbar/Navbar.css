@@ -36,7 +36,7 @@
 
 .Navbar__collapse {
     position: absolute;
-    right: -63%;
+    right: -55%;
     transition: all 0.75s ease-in-out 0.1s;
 }
 
@@ -71,24 +71,17 @@
     }
 }
 
-@media only screen and (max-width: 770px) {
-
-    .Navbar__collapse {
-        right: -65%;
-    }
-}
-
 @media only screen and (max-width: 750px) {
 
     .Navbar__collapse {
-        right: -67%;
+        right: -57%;
     }
 }
 
 @media only screen and (max-width: 730px) {
 
     .Navbar__collapse {
-        right: -70%;
+        right: -60%;
     }
 }
 

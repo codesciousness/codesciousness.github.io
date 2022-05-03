@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter as Router } from 'react-router-dom';
+import HttpsRedirect from 'react-https-redirect';
 import './index.css';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HttpsRedirect>
+      <Router>
+        <App />
+      </Router>
+    </HttpsRedirect>
   </React.StrictMode>,
   document.getElementById('root')
 );

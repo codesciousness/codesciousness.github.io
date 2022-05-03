@@ -16,8 +16,6 @@
 }
 
 .Skills__table__header {
-    font-size: 2rem;
-    text-align: left;
     margin: auto 1rem;
 }
 
@@ -25,7 +23,7 @@
     background-color: rgba(225, 240, 250, 0.2);
     padding: 0.5rem;
     border-bottom: 1px solid #E1F0FA;
-    text-align: left;
+
 }
 
 .Skills__table__data:first-child {
@@ -42,7 +40,6 @@
     background-color: white;
     margin: 0.5rem;
     padding: 0.5rem;
-    text-align: left;
 }
 
 .Skills__table__experience {
@@ -54,6 +51,7 @@
 .Skills__table__level {
     width: 50px;
     height: 50px;
+    border-right: 1px solid slategray;
     background-color: black;
     opacity: 0.8;
 }
