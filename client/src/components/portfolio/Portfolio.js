@@ -15,8 +15,8 @@ import WebDesignSystemGif from '../../resources/images/web-design-system-screen-
 
 const Portfolio = () => {
     return (
-        <section id="portfolio" className="Portfolio">
-            <h2 className="Portfolio__title">Latest Work</h2>
+        <section id="projects" className="Portfolio">
+            <h2 className="Portfolio__title">Projects</h2>
             <div className="Portfolio__projects__container">
                 <ul className="Portfolio__selection">
                     <li className="selection__one li" tabindex="1"><img className="Portfolio__image" src={EcommerceAppImg} alt="E-commerce App Project Screenshot" /></li>

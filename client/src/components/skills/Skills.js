@@ -8,8 +8,8 @@ import RDIcon from '../../resources/icons/responsive-design-icon.png';
 
 const Skills = () => {
     return (
-        <section className="Skills">
-            <h2 className="Skills__title">Full-Stack Skills</h2>
+        <section id="skills" className="Skills">
+            <h2 className="Skills__title">Technical Skills</h2>
             <table className="Skills__table">
                 <thead className="Skills__table__head">
                     <tr className="Skills__table__row">

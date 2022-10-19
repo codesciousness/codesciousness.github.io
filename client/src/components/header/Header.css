@@ -1,0 +1,27 @@
+.Header {
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.Header__container {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 0;
+}
+
+.Header__title {
+    display: inline;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+.Header__content {
+    margin: 1.5rem 0;
+    font-size: 1.75rem;
+}

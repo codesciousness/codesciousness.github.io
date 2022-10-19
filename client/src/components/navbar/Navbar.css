@@ -1,33 +1,49 @@
 .Navbar {
     width: 100%;
-    height: 80px;
-    background: white;
     position: fixed;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid black;
+    padding: 2rem;
     z-index: 2;
+    color: white;
+}
+
+.Navbar__scroll {
+    color: black;
+    background: white;
+    border-bottom: 1px solid black;
 }
 
 .Navbar__desktop, .Navbar__tablet, .Navbar__phone {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
   
-.Navbar__title {
+.Navbar__sitename {
     font-family: Advent Pro;
-    margin: auto 1rem;
+}
+
+.Navbar__site__description {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
 }
 
 .Navbar__links {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
 .Navbar__links li {
     list-style: none;
     margin: 0 2rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.Navbar__links li:hover {
+    border-left: 3px solid lightseagreen;
 }
 
 .Navbar__tablet {
@@ -98,7 +114,8 @@
 
 @media only screen and (max-width: 500px) {
 
-    .Navbar__title {
+    .Navbar__sitename,
+    .Navbar__site__description {
         display: none;
     }
 
