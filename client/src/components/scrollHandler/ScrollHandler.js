@@ -10,7 +10,7 @@ const ScrollHandler = ({ children }) => {
     setTimeout(() => {
       window.scrollTo({
         behavior: element ? 'smooth' : 'auto',
-        top: element ? element.offsetTop : 0
+        top: element ? element.offsetTop - 229 : 0
       });
     }, 100);
   };

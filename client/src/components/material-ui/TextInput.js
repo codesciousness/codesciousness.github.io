@@ -17,6 +17,9 @@ const TextInput = ({ name, type, placeholder, multiline }) => {
             margin='normal'
             fullWidth
             required
+            InputLabelProps={{
+                style: { color: 'LightSeaGreen' }
+            }}
             sx={{
                 margin: '0.5rem 1rem',
                 '& .MuiOutlinedInput-root': {
@@ -27,9 +30,6 @@ const TextInput = ({ name, type, placeholder, multiline }) => {
                     '&.Mui-focused fieldset': {
                         borderColor: 'LightSeaGreen',
                     }
-                },
-                '& .MuiInputLabel-root': {
-                    color: 'LightSeaGreen'
                 }
             }}
         />

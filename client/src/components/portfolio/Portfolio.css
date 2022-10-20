@@ -1,7 +1,7 @@
 .Portfolio {
     width: 100%;
     min-height: 90vh;
-    margin: 3rem auto 0 auto;
+    padding: 3rem 2rem;
 }
 
 .Portfolio__title {
@@ -87,8 +87,8 @@
     z-index: 1;
     float: left;
     margin: 0 10px 10px 0;
-    border: solid 3px #55bfe2;
-    background-color: #55bfe2;
+    border: solid 3px lightseagreen;
+    background-color: lightseagreen;
     outline: none;
     cursor: pointer;
     overflow: hidden;
@@ -235,7 +235,7 @@
         width: 350px;
         height: 350px;
         margin: 0.5rem;
-        border: solid 3px #55bfe2;
+        border: solid 3px lightseagreen;
         position: relative;
         overflow: hidden;
     }

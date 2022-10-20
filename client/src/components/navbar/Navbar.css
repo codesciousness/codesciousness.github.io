@@ -12,7 +12,7 @@
     border-bottom: 1px solid black;
 }
 
-.Navbar__desktop, .Navbar__tablet, .Navbar__phone {
+.Navbar__nav {
     display: flex;
     justify-content: space-between;
 }
@@ -26,6 +26,11 @@
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 1rem;
+}
+
+.Navbar__container {
+    display: flex;
+    align-items: flex-start;
 }
 
 .Navbar__links {
@@ -46,80 +51,27 @@
     border-left: 3px solid lightseagreen;
 }
 
-.Navbar__tablet {
-    position: relative;
-}
-
-.Navbar__collapse {
-    position: absolute;
-    right: -55%;
-    transition: all 0.75s ease-in-out 0.1s;
-}
-
-.Navbar__collapse:hover {
-    transform: translateX(-90%);
-}
-
-.Navbar__collapse li {
-    margin: 0 1rem;
-}
-
-.Navbar__phone {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.Navbar__tablet, .Navbar__phone {
+.Navbar__collapse,
+.Navbar__icon {
     display: none;
 }
 
 /* Media Queries */
 
-@media only screen and (max-width: 800px) {
-
-    .Navbar__desktop {
-        display: none;
-    }
-
-    .Navbar__tablet {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-
-    .Navbar__collapse {
-        right: -57%;
-    }
-}
-
-@media only screen and (max-width: 730px) {
-
-    .Navbar__collapse {
-        right: -60%;
-    }
-}
-
 @media only screen and (max-width: 700px) {
 
-    .Navbar__tablet {
+    .Navbar__link__text {
         display: none;
     }
 
-    .Navbar__phone {
+    .Navbar__icon {
         display: flex;
     }
 }
 
 @media only screen and (max-width: 500px) {
 
-    .Navbar__sitename,
     .Navbar__site__description {
         display: none;
-    }
-
-    .Navbar__phone {
-        justify-content: center;
     }
 }
