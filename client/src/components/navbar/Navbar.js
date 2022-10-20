@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
-import { Close, Email, LaptopMac, Menu, School, ViewList } from '@mui/icons-material';
+import { Close, Email, Home, LaptopMac, Menu, School, ViewList } from '@mui/icons-material';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(true);
     const [navbarColor, setNavbarColor] = useState('white');
 
     const links = [
+        {
+            name: 'Home',
+            icon: <Home fontSize="large" />
+        },
         {
             name: 'Projects',
             icon: <ViewList fontSize="large" />
@@ -31,7 +35,7 @@ const Navbar = () => {
         showMenu ? setShowMenu(false) : setShowMenu(true);
     };
 
-    const getClassName = () => {
+    const changeNavbarStyle = () => {
         const navbar = document.querySelector('.Navbar');
         const header = document.querySelector('.Header');
         const navbarPos = navbar.getBoundingClientRect();
@@ -47,7 +51,31 @@ const Navbar = () => {
         }
     };
 
-    window.addEventListener('scroll', getClassName);
+    const activateLinks = () => {
+        const sections = document.querySelectorAll('section');
+        const links = document.querySelectorAll('header nav a');
+        const projectsSection = document.getElementById('projects');
+        sections.forEach(section => {
+            const scrollPosition = window.scrollY;
+            const id = section.getAttribute('id');
+            let top = section.offsetTop - 270;
+            let height = section.offsetHeight;
+            if (id === 'home') {
+                top = section.offsetTop;
+                height = projectsSection.offsetTop - 270;
+            }
+            if (scrollPosition >= top && scrollPosition < top + height) {
+                links.forEach(link => {
+                    link.parentElement.classList.remove('active');
+                    document.querySelector(`header nav a[href*=${id}]`)
+                        .parentElement.classList.add('active');
+                });
+            }
+        });
+    };
+
+    window.addEventListener('scroll', changeNavbarStyle);
+    window.addEventListener('scroll', activateLinks);
     
     return (
         <section className="Navbar">
@@ -59,13 +87,13 @@ const Navbar = () => {
                 <div className="Navbar__container">
                     <ul className={showMenu ? "Navbar__links" : "Navbar__collapse"}>
                         {links.map((link, index) =>
-                            <li>
+                            <li className={link.name === 'Home' ? 'active' : null}>
                                 <Link
                                     key={`link-${index}`}
                                     to={`#${link.name.toLowerCase()}`}
                                 >
-                                    <i className='Navbar__icon'>{link.icon}</i>
-                                    <span className='Navbar__link__text'>{link.name}</span>
+                                    <i className="Navbar__icon">{link.icon}</i>
+                                    <span className="Navbar__link__text">{link.name}</span>
                                 </Link>
                             </li>
                         )}

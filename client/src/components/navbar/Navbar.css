@@ -47,7 +47,8 @@
     transition: all 0.3s ease-in-out;
 }
 
-.Navbar__links li:hover {
+.Navbar__links li:hover,
+.Navbar__links li.active {
     border-left: 3px solid lightseagreen;
 }
 

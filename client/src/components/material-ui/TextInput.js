@@ -9,7 +9,7 @@ const TextInput = ({ name, type, placeholder, multiline }) => {
             id={id}
             name={name}
             type={type}
-            label={name.toUpperCase()}
+            //label={name.toUpperCase()}
             placeholder={placeholder ? placeholder : `Enter your ${name.toLowerCase()}`}
             multiline={multiline}
             minRows={multiline ? 2 : null}
@@ -21,12 +21,8 @@ const TextInput = ({ name, type, placeholder, multiline }) => {
                 style: { color: 'LightSeaGreen' }
             }}
             sx={{
-                margin: '0.5rem 1rem',
                 '& .MuiOutlinedInput-root': {
                     backgroundColor: 'White',
-                    '& fieldset': {
-                        border: '1px solid Black',
-                    },
                     '&.Mui-focused fieldset': {
                         borderColor: 'LightSeaGreen',
                     }

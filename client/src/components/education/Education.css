@@ -4,4 +4,78 @@
 
 .Education__title {
     text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Education__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Education__school {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Education__image {
+    width: 20%;
+}
+
+.Education__content {
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #E1F0FA;
+    background-color: rgba(225, 240, 250, 0.2);
+}
+
+.Education__content__align {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Education__school__location {
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    margin: auto 0.5rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background-color: lightseagreen;
+}
+
+.Education__dates {
+    font-size: 1.25rem;
+}
+
+.Education__date {
+    color: lightseagreen;
+    font-weight: 700;
+}
+
+.Education__courses {
+    font-size: 1.5rem;
+}
+
+.Education__course {
+    font-size: 1.25rem;
+}
+
+.Education__reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.Education__reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }

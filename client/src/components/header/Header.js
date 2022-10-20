@@ -63,40 +63,42 @@ const Header = () => {
     });
 
     return (
-        <section className="Header" style={style}>
-            <Navbar />
-            <div className="Header__container">
-                <span>I'm a </span>
-                <h1 className="Header__title">Web Designer & Developer</h1>
-                <p className="Header__content">
-                    I enjoy the process of turning an idea into reality, and have a background in utilizing front-end 
-                    frameworks, database design, building APIs and working with servers and cloud functions. I have a 
-                    passion for problem solving, creative thinking and delivering exceptional quality.
-                </p>
-                <Link to='#contact'>
-                    <Button
-                        className="Header__button"
-                        variant="contained"
-                        disableElevation
-                        endIcon={<ArrowForwardIosIcon />}
-                        sx={{
-                            backgroundColor: 'lightseagreen',
-                            padding: '1rem 2rem',
-                            marginTop: '1rem',
-                            textTransform: 'none',
-                            fontWeight: 'bold',
-                            fontSize: '1.25rem',
-                            fontFamily: 'Rajdhani, sans-serif',
-                            '&:hover': {
-                                background: 'rgba(255, 255, 255, 0.1)'
-                            }
-                        }}
-                    >
-                        Looking to hire
-                    </Button>
-                </Link>
-            </div>
-        </section>
+        <header className="Header" style={style}>
+            <section id="home">
+                <Navbar />
+                <div className="Header__container">
+                    <span>I'm a </span>
+                    <h1 className="Header__title">Web Designer & Developer</h1>
+                    <p className="Header__content">
+                        I enjoy the process of turning an idea into reality, and have a background in utilizing front-end 
+                        frameworks, database design, building APIs and working with servers and cloud functions. I have a 
+                        passion for problem solving, creative thinking and delivering exceptional quality.
+                    </p>
+                    <Link to='#contact'>
+                        <Button
+                            className="Header__button"
+                            variant="contained"
+                            disableElevation
+                            endIcon={<ArrowForwardIosIcon />}
+                            sx={{
+                                backgroundColor: 'lightseagreen',
+                                padding: '1rem 2rem',
+                                marginTop: '1rem',
+                                textTransform: 'none',
+                                fontWeight: 'bold',
+                                fontSize: '1.25rem',
+                                fontFamily: 'Rajdhani, sans-serif',
+                                '&:hover': {
+                                    background: 'rgba(255, 255, 255, 0.1)'
+                                }
+                            }}
+                        >
+                            Looking to hire
+                        </Button>
+                    </Link>
+                </div>
+            </section>
+        </header>
     );
 }
 

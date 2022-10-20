@@ -17,7 +17,7 @@ const Contact = () => {
 
     return (
         <section id="contact" className="Contact" style={style}>
-            <h2 className="Contact__title">Reach out! Let's start something together.</h2>
+            <h2 className="Contact__title">Reach out! Let's talk.</h2>
             <form className="Contact__form" action="https://fabform.io/f/veBpK-v" method="post">
                 <TextInput name="name" />
                 <TextInput name="email" type="email" />
