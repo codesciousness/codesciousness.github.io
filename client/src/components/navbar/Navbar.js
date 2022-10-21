@@ -3,10 +3,14 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import { Close, Email, Home, LaptopMac, Menu, School, ViewList } from '@mui/icons-material';
+import { useWindowSize } from '../../hooks/use-window-size';
+import { calcOffsetTop } from '../../util/calc-offsetTop-navbar';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(true);
     const [navbarColor, setNavbarColor] = useState('white');
+    const size = useWindowSize();
+    const width = size.width;
 
     const links = [
         {
@@ -58,11 +62,11 @@ const Navbar = () => {
         sections.forEach(section => {
             const scrollPosition = window.scrollY;
             const id = section.getAttribute('id');
-            let top = section.offsetTop - 270;
+            let top = section.offsetTop - calcOffsetTop(width);
             let height = section.offsetHeight;
             if (id === 'home') {
                 top = section.offsetTop;
-                height = projectsSection.offsetTop - 270;
+                height = projectsSection.offsetTop - calcOffsetTop(width);
             }
             if (scrollPosition >= top && scrollPosition < top + height) {
                 links.forEach(link => {
