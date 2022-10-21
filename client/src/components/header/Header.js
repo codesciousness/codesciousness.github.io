@@ -14,7 +14,7 @@ const Header = () => {
         backgroundRepeat: 'no-repeat'
     };
 
-    const words = ['Web Designer & Developer', 'Mobile Application Developer', 'Full-Stack Software Engineer'];
+    const words = ['Web Designer & Developer', 'Mobile App Developer', 'Full-Stack Software Engineer'];
     const len = words.length;
     const speed = 70;
     let i = 0;

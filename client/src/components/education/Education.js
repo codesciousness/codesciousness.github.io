@@ -71,8 +71,10 @@ const Education = () => {
                                 <h3 className="Education__school__name">{school.name}</h3>
                                 <span className="Education__school__location">{school.location}</span>
                             </div>
-                            <span className="Education__earned">{school.earn}</span>
-                            <span className="Education__major"> in {school.major}</span>
+                            <span className="Education__major">
+                                <span className="Education__earned">{school.earn}</span>
+                                &nbsp;in {school.major}
+                            </span>
                             <p className="Education__dates">
                                 <span className="Education__date">{school.startDate}</span>
                                 &nbsp;to&nbsp;

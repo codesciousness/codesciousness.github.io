@@ -16,6 +16,8 @@
 
 .Education__school {
     width: 50%;
+    max-width: 1200px;
+    min-width: 900px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -23,6 +25,7 @@
 
 .Education__image {
     width: 20%;
+    min-width: 200px;
 }
 
 .Education__content {
@@ -78,4 +81,46 @@
 .Education__reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+
+    .Education__school {
+        width: 90%;
+        min-width: 200px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Education__content__align {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .Education {
+        padding: 2rem;
+    }
+
+    .Education__school {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .Education {
+        padding: 2rem 1rem;
+    }
+
+    .Education__school__name {
+        font-size: 2rem;
+    }
+
+    .Education__major {
+        font-size: 1.75rem;
+    }
 }

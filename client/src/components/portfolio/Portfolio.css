@@ -257,9 +257,13 @@
 
 @media only screen and (max-width: 400px) {
 
+    .Portfolio {
+        padding: 2rem 1rem;
+    }
+
     .Portfolio__projects {
-        width: 250px;
-        height: 250px;
+        width: 275px;
+        height: 275px;
     }
 
     .Portfolio__info {
@@ -271,8 +275,8 @@
 @media only screen and (max-width: 300px) {
 
     .Portfolio__projects {
-        width: 200px;
-        height: 200px;
+        width: 225px;
+        height: 225px;
     }
 
     .Portfolio__info {

@@ -29,6 +29,20 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+
+    .Contact__form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .Contact {
+        padding: 2rem 1rem;
+    }
+}
+
 @media only screen and (max-width: 300px) {
 
     .Contact__title {

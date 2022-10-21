@@ -40,8 +40,8 @@ const Navbar = () => {
         const header = document.querySelector('.Header');
         const navbarPos = navbar.getBoundingClientRect();
         const headerPos = header.getBoundingClientRect();
-        const relativeBottomPos = navbarPos.bottom - headerPos.bottom;
-        if (relativeBottomPos > 0) {
+        const relativeTopPos = navbarPos.top - headerPos.top;
+        if (relativeTopPos > 0) {
             navbar.classList.add('Navbar__scroll');
             setNavbarColor('black');
         }
@@ -98,14 +98,16 @@ const Navbar = () => {
                             </li>
                         )}
                     </ul>
-                    <IconButton
-                        onClick={toggleMenu}
-                        sx={{
-                            color: navbarColor
-                        }}
-                    >
-                        {showMenu ? <Close fontSize="large" /> : <Menu fontSize="large" />}
-                    </IconButton>
+                    <div className="Navbar__iconButton">
+                        <IconButton
+                            onClick={toggleMenu}
+                            sx={{
+                                color: navbarColor
+                            }}
+                        >
+                            {showMenu ? <Close fontSize="large" /> : <Menu fontSize="large" />}
+                        </IconButton>
+                    </div>
                 </div>
             </nav>
         </section>
