@@ -8,9 +8,7 @@
 
 .Skills__table {
     border-spacing: 0 5px;
-    border-radius: 5px;
     padding: 1rem;
-    width: 80%;
     margin: 2rem auto;
 }
 
@@ -19,10 +17,10 @@
 }
 
 .Skills__table__data {
-    background-color: rgba(225, 240, 250, 0.2);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
     border-bottom: 1px solid #E1F0FA;
-
+    background-color: rgba(225, 240, 250, 0.2);
 }
 
 .Skills__table__data:first-child {
@@ -35,10 +33,14 @@
     border-bottom-right-radius: 5px;
 }
 
+.Skills__table__name {
+    text-align: end;
+}
+
 .Skills__table__span {
-    background-color: white;
-    margin: 0.5rem;
     padding: 0.5rem;
+    border-radius: 4px;
+    background-color: white;
 }
 
 .Skills__table__experience {
@@ -50,8 +52,6 @@
 .Skills__table__level {
     width: 50px;
     height: 50px;
-    border-right: 1px solid slategray;
-    text-align: center;
     color: white;
     background-color: black;
     opacity: 0.8;
@@ -89,13 +89,6 @@
 }
 
 /* Media Queries */
-
-@media only screen and (max-width: 1100px) {
-
-    .Skills__table {
-        width: 100%;
-    }
-}
 
 @media only screen and (max-width: 900px) {
 

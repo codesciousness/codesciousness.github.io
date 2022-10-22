@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.fbea4160.css",
-    "main.js": "./static/js/main.a0b8c642.js",
+    "main.css": "./static/css/main.9faaad90.css",
+    "main.js": "./static/js/main.eceb1467.js",
     "static/js/787.c4e7f8f9.chunk.js": "./static/js/787.c4e7f8f9.chunk.js",
     "static/media/reddit-client-screen-recording.gif": "./static/media/reddit-client-screen-recording.d75475fec1bb4d55db60.gif",
     "static/media/company-homepage-flexbox-screen-recording.gif": "./static/media/company-homepage-flexbox-screen-recording.94b7ab943cf346aebba2.gif",
@@ -26,12 +26,12 @@
     "static/media/Codecademy Logo.png": "./static/media/Codecademy Logo.3b1ed9914462953f4ea0.png",
     "static/media/expressjs-icon.png": "./static/media/expressjs-icon.967f19e53084fc186520.png",
     "index.html": "./index.html",
-    "main.fbea4160.css.map": "./static/css/main.fbea4160.css.map",
-    "main.a0b8c642.js.map": "./static/js/main.a0b8c642.js.map",
+    "main.9faaad90.css.map": "./static/css/main.9faaad90.css.map",
+    "main.eceb1467.js.map": "./static/js/main.eceb1467.js.map",
     "787.c4e7f8f9.chunk.js.map": "./static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbea4160.css",
-    "static/js/main.a0b8c642.js"
+    "static/css/main.9faaad90.css",
+    "static/js/main.eceb1467.js"
   ]
 }

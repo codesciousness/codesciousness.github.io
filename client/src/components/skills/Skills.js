@@ -115,15 +115,15 @@ const Skills = () => {
             <table className="Skills__table">
                 <thead className="Skills__table__head">
                     <tr className="Skills__table__row">
-                        <th className="Skills__table__header">Languages/<br/>Technologies</th>
+                        <th className="Skills__table__header">Skill</th>
                         <th className="Skills__table__header">Years</th>
-                        <th className="Skills__table__header">Experience<br/>Level (1-10)</th>
+                        <th className="Skills__table__header">Experience (1-10)</th>
                     </tr>
                 </thead>
                 <tbody className="Skills__table__body">
                     {skills.map((skill, index) =>
                         <tr className="Skills__table__row" key={`skill-${index}`}>
-                            <td className="Skills__table__data">
+                            <td className="Skills__table__data Skills__table__name">
                                 <span className="Skills__table__span">{skill.name}</span>
                             </td>
                             <td className="Skills__table__data">{skill.years}</td>
