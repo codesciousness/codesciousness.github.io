@@ -115,6 +115,7 @@
     -webkit-perspective: 1000px;
             perspective: 1000px;
     overflow: hidden;
+    border: 1px solid black;
 }
 
 .Portfolio__cube {

@@ -82,6 +82,12 @@
     overflow: hidden;
 }
 
+.Skills__icon__short {
+    width: auto;
+    height: 130px;
+    overflow: hidden;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1100px) {

@@ -23,8 +23,11 @@ This project was created with:
 
 ## Screenshots
 
-![Portfolio Screen Recording 1](client/src/resources/images/portfolio-screen-recording-1.gif)
-![Portfolio Screen Recording 2](client/src/resources/images/portfolio-screen-recording-2.gif)
+![Portfolio Header](client/src/resources/images/portfolio-header.jpg)
+![Portfolio Projects](client/src/resources/images/portfolio-projects.jpg)
+![Portfolio Education](client/src/resources/images/portfolio-education.jpg)
+![Portfolio Skills](client/src/resources/images/portfolio-skills.jpg)
+![Portfolio Contact](client/src/resources/images/portfolio-contact.jpg)
 
 ## Status
 

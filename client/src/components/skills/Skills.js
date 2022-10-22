@@ -5,6 +5,7 @@ import ExpressIcon from '../../resources/icons/expressjs-icon.png';
 import SQLIcon from '../../resources/icons/sql-icon.png';
 import PostgreSQLIcon from '../../resources/icons/postgresql-icon.png';
 import RDIcon from '../../resources/icons/responsive-design-icon.png';
+import MongoDBIcon from '../../resources/icons/mongoDB-logo.png';
 import TypeScriptIcon from '../../resources/icons/typescript-icon.png';
 import ReactNativeIcon from '../../resources/icons/react-native-icon.png';
 
@@ -93,6 +94,12 @@ const Skills = () => {
             years: 1,
             experience: 3,
             icon: <i className="fas fa-database fa-4x"></i>
+        },
+        {
+            name: 'MongoDB',
+            years: 0.5,
+            experience: 3,
+            icon: <img className="Skills__icon__short" src={MongoDBIcon} alt="MongoDB Icon" />
         },
         {
             name: 'TypeScript',

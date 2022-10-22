@@ -86,7 +86,7 @@ const Navbar = () => {
             <nav className="Navbar__nav">
                 <Link to='/'>
                     <h2 className="Navbar__sitename">myCodefolio</h2>
-                    <p className="Navbar__site__description">Web and Mobile Development Services</p>
+                    <p className="Navbar__site__description">Web and Mobile Development</p>
                 </Link>
                 <div className="Navbar__container">
                     <ul className={showMenu ? "Navbar__links" : "Navbar__collapse"}>

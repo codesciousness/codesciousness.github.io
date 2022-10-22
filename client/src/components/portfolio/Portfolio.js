@@ -1,79 +1,79 @@
 import React from 'react';
 import './Portfolio.css';
+import MortgageCalculatorAppImg from '../../resources/images/mortgage-calculator-app-resized.jpg';
+import MortgagePaymentCalculatorImg from '../../resources/images/mortgage-payment-calculator-resized.jpg';
 import EcommerceAppImg from '../../resources/images/e-commerce-app-project-resized.jpg';
 import RedditClientImg from '../../resources/images/reddit-client-project-resized.jpg';
+import InsuranceTechToolsImg from '../../resources/images/insurance-tech-tools-resized.jpg';
 import CompanyHomepageImg from '../../resources/images/company-homepage-flexbox-project-resized.jpg';
-import JammingImg from '../../resources/images/jammming-project-resized.jpg';
-import FindYourHatImg from '../../resources/images/find-your-hat-project.jpg';
-import WebDesignSystemImg from '../../resources/images/web-design-system-resized.jpg';
+import MortgageCalculatorAppGif from '../../resources/images/mortgage-calculator-app-screen-recording.gif';
+import MortgagePaymentCalculatorGif from '../../resources/images/mortgage-payment-calculator-screen-recording.gif';
 import EcommerceAppGif from '../../resources/images/e-commerce-app-checkout-screen-recording.gif';
 import RedditClientGif from '../../resources/images/reddit-client-screen-recording.gif';
+import InsuranceTechToolsGif from '../../resources/images/insurance-tech-tools-screen-recording.gif';
 import CompanyHomepageGif from '../../resources/images/company-homepage-flexbox-screen-recording.gif';
-import JammingGif from '../../resources/images/jammming-screen-recording.gif';
-import FindYourHatGif from '../../resources/images/find-your-hat-screen-recording.gif';
-import WebDesignSystemGif from '../../resources/images/web-design-system-screen-recording.gif';
 
 const Portfolio = () => {
     const projects = [
         {
-            title: 'E-commerce App',
+            title: 'Mortgage Calculator App',
             number: 'one',
             position: 'front',
+            deploy_link: 'https://play.google.com/store/apps/details?id=com.codesciousness.mortgagepaymentcalculatorapp',
+            repo_link: 'https://github.com/codesciousness/mortgage-payment-calculator-app',
+            gif: MortgageCalculatorAppGif,
+            screenshot: MortgageCalculatorAppImg,
+            description: 'Firebase Express TypeScript React-Native Redux Expo'
+        },
+        {
+            title: 'Mortgage Payment Calculator',
+            number: 'two',
+            position: 'right',
+            deploy_link: 'https://mortgage-payment-calculator.herokuapp.com',
+            repo_link: 'https://github.com/codesciousness/mortgage-payment-calculator',
+            gif: MortgagePaymentCalculatorGif,
+            screenshot: MortgagePaymentCalculatorImg,
+            description: 'MongoDB Express TypeScript React Redux Node.js'
+        },
+        {
+            title: 'E-commerce App',
+            number: 'three',
+            position: 'top',
             deploy_link: 'https://plus-ultra-store.herokuapp.com',
             repo_link: 'https://github.com/codesciousness/e-commerce-app',
             gif: EcommerceAppGif,
             screenshot: EcommerceAppImg,
-            description: 'Postgres/Express/React-Redux/Node.js Project'
+            description: 'Postgres Express React Redux Node.js'
         },
         {
             title: 'Reddit Client',
-            number: 'two',
-            position: 'right',
+            number: 'four',
+            position: 'left',
             deploy_link: 'https://reddit-science.netlify.app',
             repo_link: 'https://github.com/codesciousness/reddit-client',
             gif: RedditClientGif,
             screenshot: RedditClientImg,
-            description: 'React-Redux/Node.js Project'
+            description: 'React Redux Node.js'
+        },
+        {
+            title: 'Insurance Tech Tools',
+            number: 'five',
+            position: 'bottom',
+            deploy_link: 'https://github.com/codesciousness/insurance-tech-tools',
+            repo_link: 'https://github.com/codesciousness/insurance-tech-tools',
+            gif: InsuranceTechToolsGif,
+            screenshot: InsuranceTechToolsImg,
+            description: 'HTML SCSS JavaScript'
         },
         {
             title: 'Company Home Page with Flexbox',
-            number: 'three',
-            position: 'top',
+            number: 'six',
+            position: 'back',
             deploy_link: 'https://mycodefolio.com/company-homepage-flexbox',
             repo_link: 'https://github.com/codesciousness/company-homepage-flexbox',
             gif: CompanyHomepageGif,
             screenshot: CompanyHomepageImg,
-            description: 'HTML/SCSS/JS Project'
-        },
-        {
-            title: 'Jammming',
-            number: 'four',
-            position: 'left',
-            deploy_link: 'https://mycodefolio.com/jammming',
-            repo_link: 'https://github.com/codesciousness/jammming',
-            gif: JammingGif,
-            screenshot: JammingImg,
-            description: 'React/Node.js Project'
-        },
-        {
-            title: 'Find Your Hat',
-            number: 'five',
-            position: 'bottom',
-            deploy_link: 'https://github.com/codesciousness/find-your-hat',
-            repo_link: 'https://github.com/codesciousness/find-your-hat',
-            gif: FindYourHatGif,
-            screenshot: FindYourHatImg,
-            description: 'Node.js Project'
-        },
-        {
-            title: 'Web Design System',
-            number: 'six',
-            position: 'back',
-            deploy_link: 'https://mycodefolio.com/web-design-system',
-            repo_link: 'https://github.com/codesciousness/web-design-system',
-            gif: WebDesignSystemGif,
-            screenshot: WebDesignSystemImg,
-            description: 'HTML/CSS/JS Project'
+            description: 'HTML SCSS JavaScript'
         }
     ];
 
