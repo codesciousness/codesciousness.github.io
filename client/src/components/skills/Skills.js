@@ -19,61 +19,55 @@ const Skills = () => {
         },
         {
             name: 'HTML5',
-            years: 1.5,
+            years: 2,
             experience: 7,
             icon: <i className="fab fa-html5 fa-4x"></i>
         },
         {
             name: 'CSS3',
-            years: 1.5,
+            years: 2,
             experience: 6,
             icon: <i className="fab fa-css3-alt fa-4x"></i>
         },
         {
             name: 'Responsive Design',
-            years: 1.5,
+            years: 2,
             experience: 6,
             icon: <img className="Skills__icon" src={RDIcon} alt="Responsive Design Icon" />
         },
         {
-            name: 'Git',
-            years: 1.5,
-            experience: 4,
-            icon: <i className="fab fa-git-alt fa-4x"></i>
-        },
-        {
-            name: 'GitHub',
-            years: 1.5,
-            experience: 4,
-            icon: <i className="fab fa-github fa-4x"></i>
-        },
-        {
             name: 'SASS',
-            years: 1,
+            years: 2,
             experience: 4,
             icon: <i className="fab fa-sass fa-4x"></i>
         },
         {
+            name: 'Git',
+            years: 2,
+            experience: 4,
+            icon: <i className="fab fa-git-alt fa-4x"></i>
+        },
+        {
             name: 'React',
-            years: 1,
+            years: 1.5,
             experience: 6,
             icon: <i className="fab fa-react fa-4x"></i>
         },
         {
             name: 'Redux',
-            years: 1,
+            years: 1.5,
             experience: 5,
             icon: <img className="Skills__icon" src={ReduxIcon} alt="Redux Icon" />
         },
         {
             name: 'Node.js',
-            years: 1,
+            years: 1.5,
             experience: 4,
             icon: <i className="fab fa-node fa-4x"></i>
         },
         {
             name: 'Express',
-            years: 1,
+            years: 1.5,
             experience: 5,
             icon: <img className="Skills__icon" src={ExpressIcon} alt="Express Icon" />
         },
@@ -102,16 +96,16 @@ const Skills = () => {
             icon: <img className="Skills__icon__short" src={MongoDBIcon} alt="MongoDB Icon" />
         },
         {
-            name: 'TypeScript',
-            years: 0.5,
-            experience: 4,
-            icon: <img className="Skills__icon" src={TypeScriptIcon} alt="TypeScript Icon" />
-        },
-        {
             name: 'React Native',
             years: 0.5,
             experience: 4,
             icon: <img className="Skills__icon" src={ReactNativeIcon} alt="React Native Icon" />
+        },
+        {
+            name: 'TypeScript',
+            years: 0.5,
+            experience: 4,
+            icon: <img className="Skills__icon" src={TypeScriptIcon} alt="TypeScript Icon" />
         }
     ];
 

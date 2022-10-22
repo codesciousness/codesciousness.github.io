@@ -21,7 +21,7 @@ const Education = () => {
             logo: TAMUCLogo,
             location: 'Online',
             major: 'General Studies',
-            earn: 'Bachelors',
+            earn: "Bachelor's",
             startDate: 'August 2014',
             endDate: 'May 2016',
             courses: ['Database Design', 'Legal Environment of Business', 'Natural Resources Management']
