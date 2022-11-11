@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.9faaad90.css",
-    "main.js": "./static/js/main.9eb0cb4e.js",
+    "main.js": "./static/js/main.44cd3e30.js",
     "static/js/787.c4e7f8f9.chunk.js": "./static/js/787.c4e7f8f9.chunk.js",
     "static/media/reddit-client-screen-recording.gif": "./static/media/reddit-client-screen-recording.d75475fec1bb4d55db60.gif",
     "static/media/company-homepage-flexbox-screen-recording.gif": "./static/media/company-homepage-flexbox-screen-recording.94b7ab943cf346aebba2.gif",
@@ -27,11 +27,11 @@
     "static/media/expressjs-icon.png": "./static/media/expressjs-icon.967f19e53084fc186520.png",
     "index.html": "./index.html",
     "main.9faaad90.css.map": "./static/css/main.9faaad90.css.map",
-    "main.9eb0cb4e.js.map": "./static/js/main.9eb0cb4e.js.map",
+    "main.44cd3e30.js.map": "./static/js/main.44cd3e30.js.map",
     "787.c4e7f8f9.chunk.js.map": "./static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9faaad90.css",
-    "static/js/main.9eb0cb4e.js"
+    "static/js/main.44cd3e30.js"
   ]
 }

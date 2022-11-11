@@ -59,7 +59,7 @@ const Portfolio = () => {
             title: 'Insurance Tech Tools',
             number: 'five',
             position: 'bottom',
-            deploy_link: 'https://github.com/codesciousness/insurance-tech-tools',
+            deploy_link: 'https://insurance-tech-tools.netlify.app',
             repo_link: 'https://github.com/codesciousness/insurance-tech-tools',
             gif: InsuranceTechToolsGif,
             screenshot: InsuranceTechToolsImg,
